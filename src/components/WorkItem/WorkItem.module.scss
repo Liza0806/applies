@@ -1,0 +1,121 @@
+.workItem {
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 12px;
+  border: 1px solid #ddd;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  transition: 0.2s ease;
+}
+
+.position {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.company {
+  font-style: italic;
+  margin-bottom: 0.5rem;
+}
+
+.status,
+.trust,
+.salary,
+.source,
+.employmentType,
+.workFormat,
+.appliedDate,
+.replyReceived,
+.testTask,
+.requirements,
+.notes,
+.link {
+  margin-bottom: 0.25rem;
+}
+
+/* Цветовые статусы */
+.status {
+  font-weight: bold;
+
+  &.positive {
+    color: #2e7d32; // зелёный
+  }
+
+  &.negative {
+    color: #c62828; // красный
+  }
+
+  &.neutral {
+    color: #f9a825; // жёлтый
+  }
+}
+
+.trust {
+  font-weight: bold;
+
+  &.positive {
+    color: #2e7d32;
+  }
+
+  &.negative {
+    color: #c62828;
+  }
+
+  &.neutral {
+    color: #f9a825;
+  }
+}
+
+.testTask {
+  margin-top: 0.5rem;
+
+  p {
+    margin-bottom: 0.2rem;
+  }
+
+  .positive {
+    color: #2e7d32;
+  }
+
+  .negative {
+    color: #c62828;
+  }
+
+  .neutral {
+    color: #f9a825;
+  }
+ 
+  
+}
+ .employmentType {
+    font-weight: bold;
+  
+    &.positive {
+      color: #2e7d32; // зелёный
+    }
+  
+    &.negative {
+      color: #c62828; // красный
+    }
+  
+    &.neutral {
+      color: #f9a825; // жёлтый или оранжевый
+    }
+  }
+  
+  .testTaskStatus {
+    font-weight: bold;
+  
+    &.positive {
+      color: #2e7d32;
+    }
+  
+    &.negative {
+      color: #c62828;
+    }
+  
+    &.neutral {
+      color: #f9a825;
+    }
+  }

@@ -1,0 +1,231 @@
+[
+    {
+      "position": "Junior Frontend Engineer до $600",
+      "company": "Tribuna Digital",
+      "status": "откликнулся",
+      "requirements": [
+        "1-year+ experience in creating online products (web, mobile app) through NextJS (ReactJS) and TypeScript",
+        "Ability to build interaction with backend via GraphQL through Apollo",
+        "Proficient use of version control systems, especially Git"
+      ],
+      "link": "https://djinni.co/jobs/726369-junior-frontend-engineer/?applied=ok"
+    },
+    {
+      "position": "Junior Frontend Developer (React)",
+      "company": "Collective Forecast",
+      "status": "откликнулся",
+      "requirements": [
+        "1+ year of hands-on experience with React",
+        "Solid knowledge of JavaScript (ES6+), HTML5, CSS/SCSS",
+        "Experience with state managers: Redux or Zustand",
+        "Understanding of REST principles",
+        "Experience with Git and collaborative workflows",
+        "Writing flexible and scalable code"
+      ],
+      "link": "https://djinni.co/jobs/726169-junior-frontend-developer-react-/"
+    },
+    {
+      "position": "Junior React Developer",
+      "company": "Develops Today",
+      "status": "подозрительное",
+      "requirements": [
+        "Good knowledge of Javascript (ES6+) and Typescript",
+        "Strong knowledge of React and/or React Native",
+        "Experience with SSR and Next.js",
+        "Experience in working with either Redux or Apollo Client",
+        "Ability to deliver good quality code",
+        "Experience integrating with REST or GraphQL API",
+        "Experience with Git",
+        "English Intermediate or higher"
+      ],
+      "link": "https://djinni.co/jobs/725891-junior-react-developer/"
+    },
+    {
+      "position": "React.Js Developer",
+      "company": "CvPostman",
+      "status": "откликнулся",
+      "requirements": [
+        "2+ роки досвіду комерційної роботи з ReactJS",
+        "Досвід з JavaScript/TypeScript, HTML5, CSS3 (SASS/LESS)",
+        "Знання та досвід використання React Hooks, Context API",
+        "Досвід роботи з Redux, React Query або аналогічними бібліотеками",
+        "Впевнене розуміння принципів роботи компонентної архітектури",
+        "Досвід з системами контролю версій, такими як Git",
+        "Базове розуміння CI/CD процесів",
+        "Буде плюсом: Досвід з Next.js, Material UI або Ant Design, розуміння основ роботи бекенду, досвід з тестуванням (Jest, React Testing Library)"
+      ],
+      "link": "https://djinni.co/jobs/726103-reactjs-developer/"
+    },
+    {
+      "position": "React Developer",
+      "company": "MATVIEIEV GROUP",
+      "status": "откликнулся\\ приоритетно",
+      "requirements": [
+        "Верстати адаптивні інтерфейси (HTML/CSS)",
+        "Працювати з компонентами в React",
+        "Використовувати Next.js (роутинг, SSR/SSG, API routes)",
+        "Програмувати на TypeScript"
+      ],
+      "link": "https://djinni.co/jobs/724223-react-developer/"
+    },
+    {
+      "position": "React Developer + UI/UX Designer до $700",
+      "company": "Moar.tech",
+      "status": "откликнулся\\ приоритетно",
+      "requirements": [
+        "Досвід роботи з React — впевнене володіння технологією та можливість продемонструвати реалізовані проєкти",
+        "Креативність у дизайні — вміння не тільки реалізувати дизайн, але й самостійно його створити з нуля",
+        "UI/UX — розуміння принципів побудови зручного та привабливого інтерфейсу"
+      ],
+      "link": "https://djinni.co/jobs/723706-react-developer-ui-ux-designer/"
+    },
+    {
+      "position": "Frontend Developer",
+      "company": "Agency Amazon",
+      "status": "откликнулся",
+      "requirements": [
+        "3−5+ years of experience in React/TypeScript development",
+        "Strong knowledge of React and TypeScript",
+        "Solid understanding of modern web technologies (HTML, CSS, JavaScript)",
+        "Experience with performance optimization and building scalable applications",
+        "Familiarity with Git and version control systems",
+        "Upper-Intermediate English or higher",
+        "Proven experience in QA practices"
+      ],
+      "link": "https://www.work.ua/jobs/6468679/"
+    },
+    {
+      "position": "Trainee, Junior Frontend Developer (Shopify)",
+      "company": "Копитко Н.А., ФОП",
+      "status": "откликнулся",
+      "requirements": [
+        "HTML, CSS на впевненому рівні",
+        "Базове розуміння адаптивної верстки",
+        "JavaScript — не обов’язково, але буде плюсом",
+        "Інтерес до Shopify / готовність вивчити Liquid",
+        "Відповідальність і дотримання домовлених дедлайнів",
+        "Вік від 20-ти років"
+      ],
+      "link": "https://www.work.ua/jobs/6489469/"
+    },
+    {
+      "position": "Junior Front-end developer (affiliate marketing)",
+      "company": "MediaTraf",
+      "status": "откликнулся",
+      "requirements": [
+        "Поглибленні знання HTML, CSS",
+        "Базове розуміння JS",
+        "Досвід роботи з чужим кодом",
+        "Розуміння семантики HTML",
+        "Вміння задіювати всі ресурси для досягнення мети",
+        "Досвід роботи в арбітражних командах обов’язково"
+      ],
+      "link": "https://www.work.ua/jobs/6488134/"
+    },
+    {
+      "position": "Front-end Developer",
+      "company": "RocketUp",
+      "status": "откликнулся",
+      "requirements": [
+        "HTML + CSS + JS (Vue/Nuxt — Pinia store)",
+        "Primevue / Vuetify + Tailwind"
+      ],
+      "link": "https://www.work.ua/jobs/6423892/"
+    },
+    {
+      "position": "Front-end, React-розробник",
+      "company": "Software Technologies",
+      "status": "откликнулся",
+      "requirements": [
+        "At least 1 year of experience as a Frontend Developer with a focus on React.js",
+        "Strong proficiency in JavaScript/TypeScript",
+        "Experience with Next.js",
+        "Solid understanding of front-end technologies, including Tailwind CSS and Radix UI",
+        "Knowledge of version control systems (e.g., Git)",
+        "English level — Upper-intermediate +",
+        "Excellent problem-solving and communication skills",
+        "Experience with React Native will be an advantage"
+      ],
+      "link": "https://www.work.ua/jobs/6495217/"
+    },
+    {
+      "position": "Junior Web-розробник у BoldLook",
+      "company": "BoldLook",
+      "status": "откликнулся\\ приоритетно",
+      "requirements": [
+        "Кандидата з мінімальним досвідом (до 1 року), але з великим бажанням розвиватися",
+        "Володіння HTML, CSS, JavaScript, базові знання CMS або фреймворків (WordPress / Shopify / React)",
+        "Уважність до деталей, креативне бачення та любов до красивих інтерфейсів"
+      ],
+      "link": "https://www.work.ua/jobs/6483610/"
+    },
+    {
+      "position": "Front-end developer",
+      "company": "Polar Bear Commerce",
+      "status": "откликнулся\\ приоритетно",
+      "requirements": [
+        "HTML5",
+        "CSS, SASS/LESS (SCSS)",
+        "JavaScript, jQuery, та сучасні JavaScript фреймворки (React)",
+        "GIT",
+        "Знання Webpack",
+        "Розробка адаптивних інтерфейсів під різні пристрої"
+      ],
+      "link": "https://www.work.ua/jobs/4624931/"
+    },
+    {
+      "position": "Frontend Developer",
+      "company": "Tainatec",
+      "status": "откликнулся чз анкету",
+      "requirements": [
+        "React, Vue, Angular, JavaScript (ES6+), TypeScript",
+        "Адаптивна верстка, кросбраузерність, оптимізація продуктивності",
+        "Розуміння принципів UX/UI",
+        "Фреймворки: React, Vue.js, Angular, Bootstrap",
+        "Знання Node.js, базовий досвід роботи з бекендом буде перевагою",
+        "Досвід роботи з RESTful API чи GraphQL стане плюсом"
+      ],
+      "link": "https://apply.tainatec.com/"
+    },
+    {
+      "position": "Junior Frontend Developer",
+      "company": "SoftSvit",
+      "status": "откликнулся\\ приоритетно",
+      "requirements": [
+        "Знання HTML, CSS, JavaScript",
+        "Вміння швидко навчатися",
+        "Відповідальність",
+        "Навички самостійної роботи в команді, стресостійкість"
+      ],
+      "link": "https://www.work.ua/jobs/6451732/"
+    },
+    {
+      "position": "Junior Front-end Developer (Affiliate Marketing)",
+      "company": "Punch Agency",
+      "status": "откликнулся чз телеграм",
+      "requirements": [
+        "поглибленні знання HTML, CSS",
+        "базове розуміння JS",
+        "досвід роботи з чужим кодом",
+        "розуміння семантики HTML",
+        "вміння задіювати всі ресурси для досягнення мети",
+        "досвід роботи в Affiliate Marketing — обовʼязково"
+      ],
+      "link": "https://www.work.ua/jobs/6444136/"
+    },
+    {
+      "position": "Junior Frontend Developer",
+      "company": "G&M Development",
+      "status": "откликнулся чз телеграм",
+      "requirements": [
+        "Базові знання HTML, CSS, JavaScript",
+        "Розуміння принципів адаптивної верстки",
+        "Бажання вчитися та розвиватися",
+        "Вміння працювати в команді та відповідальність",
+        "Досвід роботи з Git буде плюсом",
+        "Знання React або Vue.js на базовому рівні буде перевагою"
+      ],
+      "link": "https://www.work.ua/jobs/5911106/"
+    }
+  ]
+  
