@@ -5,7 +5,7 @@ import './App.css';
 import { ApplicationStatus, EmploymentType, JobApplication, TestTask, TrustLevel, WorkFormat } from './types';
 import Modal from './components/Modal/Modal';
 import Form from './components/Form/Form';
-//import worksJSON from '../worksJSON.json';
+import worksJSON from '../worksJSON.json'; ///////////////////////////////////////////////////////////////////////////////////////////////////
 import WorkItem from './components/WorkItem/WorkItem';
 
 function App() {
@@ -40,7 +40,7 @@ const resetFilters = () => {
 };
 
   useEffect(() => {
-   // localStorage.setItem("works", JSON.stringify(worksJSON))
+    localStorage.setItem("works", JSON.stringify(worksJSON)) /////////////////////////////////////////////////////////////////
     const storedWorks = localStorage.getItem("works");
     if (storedWorks) {
       const parsedWorks: JobApplication[] = JSON.parse(storedWorks);
