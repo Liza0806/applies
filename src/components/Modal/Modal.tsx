@@ -1,4 +1,5 @@
 import ReactDOM from 'react-dom';
+import React from 'react';
 import cls from './Modal.module.scss';
 import { ReactNode } from 'react';
 
