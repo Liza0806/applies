@@ -1,12 +1,17 @@
 import React from "react";
 import cls from "./WorkItem.module.scss";
 import { JobApplication } from "../../types";
+import { handleEdit } from "../../functions/functions.js";
 
 type WorkItemProps = {
-  work: JobApplication;
+  initialWork: JobApplication;
 };
 
-const WorkItem: React.FC<WorkItemProps> = ({ work }) => {
+const WorkItem: React.FC<WorkItemProps> = ({ initialWork }) => {
+
+    const [work, setWork] = React.useState<JobApplication>(initialWork);
+  
+  
   const getStatusClass = (status: string) => {
     if (["Оффер", "Прошёл все интервью", "Принято"].includes(status))
       return cls.positive;
@@ -25,6 +30,7 @@ const WorkItem: React.FC<WorkItemProps> = ({ work }) => {
     if (status === "Не принято") return cls.negative;
     return cls.neutral;
   };
+
   const getEmploymentClass = (type: string) => {
     if (["Полная", "Частичная", "Удалёнка"].includes(type)) return cls.positive;
     if (["Контракт", "Офис"].includes(type)) return cls.negative;
@@ -36,6 +42,8 @@ const WorkItem: React.FC<WorkItemProps> = ({ work }) => {
     if (format === "Офис") return cls.negative;
     return cls.neutral;
   };
+
+
 
   return (
     <div className={cls.workItem}>
@@ -49,47 +57,36 @@ const WorkItem: React.FC<WorkItemProps> = ({ work }) => {
       </p>
       <p className={cls.salary}>Зарплата: {work.salary || "Не указано"}</p>
       <p className={cls.source}>Источник: {work.source}</p>
-      <p
-        className={`${cls.employmentType} ${getEmploymentClass(
-          work.employmentType
-        )}`}
-      >
+      <p className={`${cls.employmentType} ${getEmploymentClass(work.employmentType)}`}>
         Тип занятости: {work.employmentType}
       </p>
-
       <p className={`${cls.workFormat} ${getWorkFormatClass(work.workFormat)}`}>
         Формат работы: {work.workFormat}
       </p>
-
       <p className={cls.appliedDate}>Дата подачи: {work.appliedDate}</p>
       <p className={cls.replyReceived}>
         Ответ получен: {work.replyReceived ? "Да" : "Нет"}
       </p>
+
       {work.testTask && (
         <div className={cls.testTask}>
           {work.testTask.status && (
-            <p
-              className={`${cls.testTaskStatus} ${getTestTaskStatusClass(
-                work.testTask.status
-              )}`}
-            >
+            <p className={`${cls.testTaskStatus} ${getTestTaskStatusClass(work.testTask.status)}`}>
               Статус: {work.testTask.status}
             </p>
           )}
-
-          {work.testTask.sentDate && (
-            <p>Дата отправки: {work.testTask.sentDate}</p>
-          )}
+          {work.testTask.sentDate && <p>Дата отправки: {work.testTask.sentDate}</p>}
           {work.testTask.status && <p>Статус: {work.testTask.status}</p>}
         </div>
       )}
+
       <p className={cls.requirements}>
         Требования:{" "}
-        {work.requirements.length > 0
-          ? work.requirements.join(", ")
-          : "Нет требований"}
+        {work.requirements.length > 0 ? work.requirements.join(", ") : "Нет требований"}
       </p>
+
       {work.notes && <p className={cls.notes}>Заметки: {work.notes}</p>}
+
       {work.link && (
         <p className={cls.link}>
           Ссылка:{" "}
@@ -98,6 +95,10 @@ const WorkItem: React.FC<WorkItemProps> = ({ work }) => {
           </a>
         </p>
       )}
+
+      <button className={cls.editButton} onClick={()=>handleEdit(work.id, setWork)}>
+        Редактировать
+      </button>
     </div>
   );
 };

@@ -9,10 +9,11 @@ import {
   TrustLevel,
   WorkFormat,
 } from "./types";
-import Modal from "./components/Modal/Modal";
+
 import Form from "./components/Form/Form";
-import worksJSON from "../worksJSON.json"; ///////////////////////////////////////////////////////////////////////////////////////////////////
 import WorkItem from "./components/WorkItem/WorkItem";
+import Modal from "./components/modal/Modal";
+import { fetchWorks, handleSave } from "./functions/functions.js";
 
 function App() {
   const [works, setWorks] = useState<JobApplication[]>([]);
@@ -58,27 +59,23 @@ function App() {
   };
 
   useEffect(() => {
-    const storedWorks: string = "";
+    const storedWorks = localStorage.getItem("works");
     if (storedWorks) {
       const parsedWorks: JobApplication[] = JSON.parse(storedWorks);
       if (Array.isArray(parsedWorks)) {
         setWorks(parsedWorks);
       }
     } else {
-      localStorage.setItem("works", JSON.stringify(worksJSON));
-      const parsedWorks: JobApplication[] = JSON.parse(storedWorks);
-      if (Array.isArray(parsedWorks)) {
-        setWorks(parsedWorks);
-      }
+      const fetchData = async () => {
+        const works = await fetchWorks(); // ждем результат!!!!!!!!!!!!!!!!!
+        if (works) {
+          setWorks(works);
+        }
+      };
+      fetchData(); 
     }
   }, []);
-
-  const handleSave = (data: JobApplication) => {
-    const updatedWorks = [...works, data];
-    setWorks(updatedWorks);
-    localStorage.setItem("works", JSON.stringify(updatedWorks));
-    setIsModalOpen(false);
-  };
+  
 
   return (
     <div>
@@ -157,7 +154,11 @@ function App() {
       </div>
 
       <Modal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)}>
-        <Form onSave={handleSave} />
+        <Form
+          onSave={(newData) =>
+            handleSave(newData, works, setWorks, setIsModalOpen)
+          }
+        />
       </Modal>
 
       <h1>Работы</h1>
